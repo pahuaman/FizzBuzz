@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+        
+        function Fizz(n){ 
+            n = "Fizz";
+            console.log(n); // para visualizar los valores en la consola presionar F12
+            document.write(n + "<br>");
+        }//Fizz
+        
+        function Buzz(n){
+            n = "Buzz";
+            console.log(n); //para visualizar los valores en la consola presionar F12
+            document.write(n + "<br>");
+        }//Buzz
+
+        function FizzBuzz(n){
+            n = "Fizz Buzz";
+            console.log(n); //para visualizar los valores en la consola presionar F12
+            document.write(n + "<br>");
+        }//FizzBuzz
+
+        for(var i=1; i<=100; i++){
+            if(i % 15 == 0){
+                FizzBuzz(i);
+            }//if
+            else if(i % 3 == 0){
+                Fizz(i);
+            }//else-if
+            else if(i % 5 == 0){
+                Buzz(i);
+            }//else-if
+            else{
+                console.log(i); //para visualizar los valores en la consola presionar F12
+                document.write(i + "<br>");
+            }//else
+        }//for
+        
+    </script>
+</body>
+</html>
